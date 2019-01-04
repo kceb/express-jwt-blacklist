@@ -110,7 +110,7 @@ User object `req.user` that's being set by the express-jwt library **should** co
 
 They are signed with a secret phrase or a private key, this makes token verification extremely fast, no database lookups just cryptography. Tokens are being issued once user has been successfully authenticated and contain expiration timestamp, they become invalid once the expiration time is up.
 
-Tokens are usually stored on the client, browser cookie, local storage or some other store. By having a non-persistent session tokens we loose the ability to **revoke** them once they're out in the wild.
+Tokens are usually stored on the client, browser cookie, local storage or some other store. By having a non-persistent session tokens we lose the ability to **revoke** them once they're out in the wild.
 
 The Open Web Application Security Project states this in the [Session Management](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet) section
 
